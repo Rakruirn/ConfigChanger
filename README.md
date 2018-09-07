@@ -9,3 +9,12 @@ One downside, this requires the config files to be already present. Meaning to r
 You will need a properly formatted json file; see example.json.
 
 (I know there are likely better ways, but this is what I came up with.)
+
+Notes:
+There are a few flags you can use with this script. 
+- File (Default $null) : Bypass the file prompt by giving the file upfront.
+- SkipCheck (Default $false) : Toggles if the confirm prompt will prompt before applying the changes.
+- ShowSkipped (Default $true) : Toggles if skipped items are reported in the console.
+- AutoClose (Default $false) : Toggles if the script should close automatically or wait for input.
+
+Another thing to note. Powershell does not want to run unknown code. If you run into this, please review the code for yourself, then copy and paste it into a .ps1 file you created.
