@@ -1,0 +1,21 @@
+{
+    "ReadMe": "If manually editing thisl file, slashes, quotes and other special characters need to be escaped with a back slash.",
+    "MinecraftDirectory": "C:\\Users\\[Username]\\Minecraft Profiles\\MyExamplePack\\Config",
+    "Changes": [{
+        "Name": "Name Of Mod",
+        "File": "[File name and location relative to the directory above].cfg",
+        "Edits": [{
+                "Note": "Optional Note",
+                "Find": "I:\"Chance\"=25",
+                "Replace": "I:\"Chance\"=2",
+                "Enabled": false
+            },
+            {
+                "Note": "Optional Note",
+                "Find": "I:\"Spiders\"=25",
+                "Replace": "I:\"Spiders\"=2",
+                "Enabled": true
+            }
+        ]
+    }]
+}
