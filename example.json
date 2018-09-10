@@ -2,20 +2,42 @@
     "ReadMe": "If manually editing thisl file, slashes, quotes and other special characters need to be escaped with a back slash.",
     "MinecraftDirectory": "C:\\Users\\[Username]\\Minecraft Profiles\\MyExamplePack\\Config",
     "Changes": [{
-        "Name": "Name Of Mod",
-        "File": "[File name and location relative to the directory above].cfg",
-        "Edits": [{
-                "Note": "Optional Note",
-                "Find": "I:\"Chance\"=25",
-                "Replace": "I:\"Chance\"=2",
-                "Enabled": false
-            },
-            {
-                "Note": "Optional Note",
-                "Find": "I:\"Spiders\"=25",
-                "Replace": "I:\"Spiders\"=2",
+            "Name": "Pretty Beaches",
+            "File": "prettybeaches.cfg",
+            "Edits": [{
+                "Note": "",
+                "Method": "RegEx",
+                "Find": "S:\"Affected Blocks\" \u003c\r\n( *)minecraft:sand\r\n( *)\u003e",
+                "Replace": "S:\"Affected Blocks\" <\r\n        minecraft:sand\r\n        minecraft:gravel\r\n    >",
                 "Enabled": true
-            }
-        ]
-    }]
+            }]
+        },
+        {
+            "Name": "Quark",
+            "File": "quark.cfg",
+            "Edits": [{
+                    "Note": "",
+                    "Find": "B:experimental=true",
+                    "Replace": "B:experimental=false",
+                    "Enabled": true
+                },
+                {
+                    "Note": "",
+                    "Find": "B:\"Auto jump hotkey\"=true",
+                    "Replace": "B:\"Auto jump hotkey\"=false",
+                    "Enabled": true
+                }
+            ]
+        },
+        {
+            "Name": "Traverse",
+            "File": "traverse\\traverse.cfg",
+            "Edits": [{
+                "Note": "",
+                "Find": "B:disableCanyon=true",
+                "Replace": "B:disableCanyon=false",
+                "Enabled": true
+            }]
+        }
+    ]
 }
